@@ -91,6 +91,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
+### Contact information:
+hubbardbrent@icloud.com
+
+
 
 
 
