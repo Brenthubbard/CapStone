@@ -13,8 +13,8 @@ function EditInputForm(props) {
     const propertiesToUpdate = {
       name: event.target.name.value,
       location: event.target.location.value,
-      event: event.target.event.value
-      guests: event.target.guests.value
+      event: event.target.event.value,
+      guests: event.target.guests.value,
       date: event.target.date.value
     }
     return firestore.update({ collection: 'inputs', doc: input.id }, propertiesToUpdate)
