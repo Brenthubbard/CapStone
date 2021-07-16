@@ -72,3 +72,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+### Project Proposal:
+
+Project name: Event Planning
+
+This app will allow prospective clients to fill out an input form with data regarding the event they would like to put on. This information will then be put into a database where it can be applied to a calendar for scheduling.
+
+#### MVP
+
+Splash page 
+link to other vendors ie (photographer, optional venues etc)
+API calls for info on potential venues
+
+
+#### Tech used
+React
+Html
+CSS
+FireBase
+FireStore
+
+#### Stretch goals
+Adding calendar link
+Linking form to email and sending to planner
+
