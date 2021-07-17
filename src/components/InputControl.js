@@ -31,7 +31,7 @@ class InputControl extends React.Component {
 
   // updateTicketElapsedWaitTime = () => {
   //   const { dispatch } = this.props;
-  //   Object.values(this.props.masterTicketList).forEach(ticket => {
+  //   Object.values(this.props.masterList).forEach(ticket => {
   //     const newFormattedWaitTime = ticket.timeOpen.fromNow(true);
   //     const action = a.updateTime(ticket.id, newFormattedWaitTime);
   //     dispatch(action);
@@ -62,14 +62,14 @@ class InputControl extends React.Component {
   handleChangingSelectedInput = (id) => {
     this.props.firestore.get({ collection: 'inputs', doc: id }).then((input) => {
       const firestoreInput = {
-        name: ticket.get("name"),
-        location: ticket.get("location"),
-        event: ticket.get("event"),
-        guests: ticket.get("guests"),
-        date: ticket.get("date"),
-        id: ticket.id
+        name: input.get("name"),
+        location: input.get("location"),
+        event: input.get("event"),
+        guests: input.get("guests"),
+        date: input.get("date"),
+        id: input.id
       }
-      this.setState({ selectedInput: firestoreInput});
+      this.setState({ selectedInput: firestoreInput });
     });
   }
 

@@ -19,9 +19,9 @@ export default (state = {}, action) => {
       delete newState[id];
       return newState;
     case c.UPDATE_TIME:
-      const updatedTicket = Object.assign({}, state[id], { formattedWaitTime });
+      const updatedInput = Object.assign({}, state[id], { formattedWaitTime });
       const updatedState = Object.assign({}, state, {
-        [id]: updatedTicket
+        [id]: updatedInput
       });
       return updatedState;
     default:

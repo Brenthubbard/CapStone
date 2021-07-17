@@ -12,7 +12,7 @@ function InputList(props) {
 
   const input = useSelector(state => state.firestore.ordered.inputs);
 
-  if (isLoaded(inputs)) {
+  if (isLoaded(input)) {
     return (
       <React.Fragment>
         <hr />

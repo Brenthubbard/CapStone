@@ -17,13 +17,12 @@ function Input(props) {
           );
 }
 
-          Ticket.propTypes = {
+          Input.propTypes = {
             names: PropTypes.string,
           location: PropTypes.string,
           event: PropTypes.string,
           guest: PropTypes.number,
-          date: PropTypes.date,
-          
+          date: PropTypes.string,
           id: PropTypes.string,
           formattedWaitTime: PropTypes.string,
           whenInputClicked: PropTypes.func

@@ -36,7 +36,7 @@ function NewInputForm(props) {
   return (
     <React.Fragment>
       <ReusableForm
-        formSubmissionHandler={addIuputToFirestore}
+        formSubmissionHandler={addInputToFirestore}
         buttonText="Submit your party information!" />
     </React.Fragment>
   );
