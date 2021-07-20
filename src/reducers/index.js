@@ -1,6 +1,6 @@
 
 import formVisibleReducer from './form-visible-reducer';
-import inputListReducer from './input-list-reducer';
+import inputListReducer from './Input-list-reducer';
 import { combineReducers } from 'redux';
 import { firestoreReducer } from 'redux-firestore';
 

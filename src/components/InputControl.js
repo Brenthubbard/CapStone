@@ -5,8 +5,8 @@ import InputDetail from './InputDetail';
 import EditInputForm from './EditInputForm';
 import { connect } from 'react-redux';
 import PropTypes from "prop-types";
-import * as a from './../actions';
-import { withFirestore, isLoaded } from 'react-redux-firebase'
+import * as a from '../actions/Index';
+import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 class InputControl extends React.Component {
 
