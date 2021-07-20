@@ -8,18 +8,18 @@ import { useFirestore } from 'react-redux-firebase'
 function NewInputForm(props) {
 
   const firestore = useFirestore();
-
+  
   function addInputToFirestore(event) {
     event.preventDefault();
     props.onNewInputCreation();
     
     return firestore.collection('inputs').add(
       {
-        names: event.target.names.value,
-        location: event.target.location.value,
-        event: event.target.event.value,
-        guests: event.target.guests.value,
-        date: event.target.date.value,
+        names: event.target.names.value ,
+        location: event.target.location.value ,
+        event: event.target.event.value ,
+        guests: event.target.guests.value , 
+        date: event.target.date.value , 
         timeOpen: firestore.FieldValue.serverTimestamp()
       }
     );
