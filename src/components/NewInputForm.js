@@ -13,7 +13,7 @@ function NewInputForm(props) {
     event.preventDefault();
     props.onNewInputCreation();
     
-    return firestore.collection('Inputs').add(
+    return firestore.collection('inputs').add(
       {
         names: event.target.names.value,
         location: event.target.location.value,

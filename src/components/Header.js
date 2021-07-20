@@ -17,7 +17,7 @@ function Header() {
       <StyledWrapper>
 
         <ClassEventHeader>
-          Help Queue
+         Class Collective Events 
         </ClassEventHeader>
         <ul>
           <li>

@@ -5,7 +5,7 @@ import InputDetail from './InputDetail';
 import EditInputForm from './EditInputForm';
 import { connect } from 'react-redux';
 import PropTypes from "prop-types";
-import * as a from '../actions/Index';
+import * as a from './../actions/Index';
 import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 class InputControl extends React.Component {
@@ -104,7 +104,7 @@ class InputControl extends React.Component {
     if ((isLoaded(auth)) && (auth.currentUser == null)) {
       return (
         <React.Fragment>
-          <h1>You must be signed in to access the Input List.</h1>
+          <h1>You must be signed in to access the Event List.</h1>
         </React.Fragment>
       )
     }
@@ -128,7 +128,7 @@ class InputControl extends React.Component {
         currentlyVisibleState = <InputList inputList={this.props
           .masterInputList
         } onInputSelection={this.handleChangingSelectedInput} />;
-        buttonText = "Add Event to Calendar";
+        buttonText = "Add Event to Event List";
       }
       return (
         <React.Fragment>
