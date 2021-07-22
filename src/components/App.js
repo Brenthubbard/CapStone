@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./Header/Header";
 import InputControl from "./InputControl";
 import Signin from "./SignIn";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -16,10 +16,10 @@ function App() {
         </Route>
         <Route path="/">
           <InputControl />
+        </Route>
           <div className="App">
             <Header />
           </div>
-        </Route>
       </Switch>
     </Router>
     

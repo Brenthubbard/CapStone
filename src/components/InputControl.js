@@ -92,6 +92,12 @@ class InputControl extends React.Component {
     this.setState({ selectedInput: null });
   }
 
+
+
+
+
+  
+
   render() {
     const auth = this.props.firebase.auth();
     if (!isLoaded(auth)) {

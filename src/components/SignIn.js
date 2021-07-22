@@ -13,7 +13,7 @@ function Signin() {
     });
   }
   function doSignIn(event) {
-    event.preventDefault();
+    // event.preventDefault();
     const email = event.target.signinEmail.value;
     const password = event.target.signinPassword.value;
     firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
@@ -41,24 +41,24 @@ function Signin() {
         <input
           type='password'
           name='password'
-          placeholder='Password' />
+          placeholder='Password' /><br />
         <button type='submit'>Sign up</button>
       </form>
-      <h1>Sign In</h1>
+      <h3>Sign In</h3>
       <form onSubmit={doSignIn}>
         <input
           type='text'
           name='signinEmail'
-          placeholder='email here' />
+          placeholder='email here' /><br />
         <input
           type='password'
           name='signinPassword'
-          placeholder='Password' />
+          placeholder='Password' /><br />
         <button type='submit'>Sign in</button>
 
       </form>
 
-      <h1>Sign Out</h1>
+      <h3>Sign Out</h3>
       <button onClick={doSignOut}>Sign out</button>
     </React.Fragment>
   )

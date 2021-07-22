@@ -8,26 +8,26 @@ function ReusableForm(props) {
         <input
           type='text'
           name='names'
-          placeholder='Host Names?' />
+          placeholder='Host Names?' /><br />
         <input
           type='text'
           name='location'
-          placeholder='Desired location of the event?' />
+          placeholder='Desired location of the event?' /><br />
         <input
           type='text'
           name='event'
-          placeholder='What type of event are we doing?' />
+          placeholder='What type of event are we doing?' /><br />
         <input
           type='number'
           name='guests'
-          placeholder='How many guests are we inviting?' />
+          placeholder='How many guests are we inviting?' /><br />
         <input
           type='date'
           name='date'
-          placeholder='Desired location of the event?' />
+          placeholder='Desired location of the event?' /><br />
         <textarea
           name='additional info'
-          placeholder='Additional Info.' />
+          placeholder='Additional Info.' /><br />
         
         <button type='submit'>{props.buttonText}</button>
       </form>

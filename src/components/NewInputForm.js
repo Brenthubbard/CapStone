@@ -15,10 +15,14 @@ function NewInputForm(props) {
     
     return firestore.collection('inputs').add(
       {
-        names: event.target.names.value ,
-        location: event.target.location.value ,
-        event: event.target.event.value ,
-        guests: event.target.guests.value , 
+        names: event.target.names.value,
+        
+        location: event.target.location.value,
+        
+        event: event.target.event.value,
+        
+        guests: event.target.guests.value,
+        
         date: event.target.date.value , 
         timeOpen: firestore.FieldValue.serverTimestamp()
       }
