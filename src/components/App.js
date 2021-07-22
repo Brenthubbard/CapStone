@@ -3,7 +3,7 @@ import Header from "./Header";
 import InputControl from "./InputControl";
 import Signin from "./SignIn";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+// import Header from './components/Header'
 
 
 function App() {
@@ -16,9 +16,13 @@ function App() {
         </Route>
         <Route path="/">
           <InputControl />
+          <div className="App">
+            <Header />
+          </div>
         </Route>
       </Switch>
     </Router>
+    
   );
 }
 
