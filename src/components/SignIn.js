@@ -24,26 +24,33 @@ function Signin() {
   }
   function doSignOut() {
     firebase.auth().signOut().then(function () {
-      console.log("Successfully signed out!");
+      // console.log("Successfully signed out!");
     }).catch(function (error) {
-      console.log(error.message);
+      // console.log(error.message);
     });
+  }
+  function didSignIn() {
+    
   }
 
   return (
     <React.Fragment>
+      
       <h1>Sign up</h1>
       <form onSubmit={doSignUp}>
         <input
           type='text'
           name='email'
-          placeholder='Input you email here' />
+          placeholder='Input you email here' /><br />
         <input
           type='password'
           name='password'
           placeholder='Password' /><br />
         <button type='submit'>Sign up</button>
       </form>
+      <br />
+      <br />
+      <br />
       <h3>Sign In</h3>
       <form onSubmit={doSignIn}>
         <input
@@ -57,7 +64,8 @@ function Signin() {
         <button type='submit'>Sign in</button>
 
       </form>
-
+      <br />
+      <br />
       <h3>Sign Out</h3>
       <button onClick={doSignOut}>Sign out</button>
     </React.Fragment>
