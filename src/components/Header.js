@@ -8,7 +8,7 @@ const ClassEventHeader = styled.h1`
   color: blue;
 `;
 const StyledWrapper = styled.section`
-  background-color: orange;
+  background-color: champagne;
 `;
 function Header() {
   return (
