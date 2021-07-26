@@ -3,6 +3,7 @@ import Header from "./Header/Header";
 import InputControl from "./InputControl";
 import Signin from "./SignIn";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NewInputForm from "./NewInputForm";
 // import Header from './components/Header'
 
 
