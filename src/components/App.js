@@ -9,9 +9,6 @@ import NewInputForm from "./NewInputForm";
 
 function App() {
   return (
-
-
-    
     <Router>
       <Header />
       <Switch>
@@ -21,9 +18,9 @@ function App() {
         <Route path="/">
           <InputControl />
         </Route>
-          <div className="App">
+          {/* <div className="App">
             <Header />
-          </div>
+          </div> */}
       </Switch>
     </Router>
     

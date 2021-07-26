@@ -38,9 +38,9 @@ function Signin() {
       console.log(error.message);
     });
   }
-  // function didSignIn() {
-  //   console.log("Did sign in")
-  // }
+  function didSignIn() {
+    console.log("Did sign in")
+  }
   // this.email.value = "";
   // this.password.value = "";
 
