@@ -2,6 +2,8 @@ import React from "react";
 import firebase from "firebase/app";
 import ReusableForm from "./ReusableForm";
 import Header from "./Header/Header";
+import { withRouter } from "react-router-dom";
+
 
 function Signin() {
   function doSignUp(event) {
@@ -20,10 +22,14 @@ function Signin() {
     const password = event.target.signinPassword.value;
     firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
       console.log("Successfully signed in!");
-
+        // <Route exact path="/"/>
+      // this.email.value = "";
+      // this.password.value = "";
     }).catch(function (error) {
       console.log(error.message);
     });
+    // this.props.history.push("/");
+    
   }
   function doSignOut() {
     firebase.auth().signOut().then(function () {
@@ -32,9 +38,11 @@ function Signin() {
       console.log(error.message);
     });
   }
-  function didSignIn() {
-    
-  }
+  // function didSignIn() {
+  //   console.log("Did sign in")
+  // }
+  // this.email.value = "";
+  // this.password.value = "";
 
   return (
     <React.Fragment>
@@ -65,6 +73,7 @@ function Signin() {
           name='signinPassword'
           placeholder='Password' /><br />
         <button type='submit'>Sign in</button>
+        {/* <Link classname="btn btn-pink" role="button" to="/" type="submit" >Submit Sign in</Link> */}
 
       </form>
       <br />
