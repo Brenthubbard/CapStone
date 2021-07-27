@@ -26,7 +26,7 @@ function ReusableForm(props) {
           name='date'
           placeholder='Desired location of the event?' /><br />
         <textarea
-          name='additional info'
+          name='addInfo'
           placeholder='Additional Info.' /><br />
         
         <button type='submit'>{props.buttonText}</button>
