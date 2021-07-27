@@ -47,6 +47,7 @@ class InputControl extends React.Component {
         event: input.get("event"),
         guests: input.get("guests"),
         date: input.get("date"),
+        addInfo: input.get("addInfo"),
         id: input.id
       }
       this.setState({ selectedInput: firestoreInput });

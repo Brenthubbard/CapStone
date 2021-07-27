@@ -19,11 +19,12 @@ function InputList(props) {
         {input.map((input) => {
           return <Input
             whenInputClicked={props.onInputSelection}
-            names={input.names}
+            name={input.name}
             location={input.location}
             event={input.event}
             guests={input.guests}
             date={input.date}
+            addInfo={input.addInfo}
             formattedWaitTime={input.formattedWaitTime}
             id={input.id}
             key={input.id} />

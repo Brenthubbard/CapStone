@@ -61,7 +61,6 @@ function Signin() {
       </form>
       <br />
       <br />
-      <br />
       <h3>Sign In</h3>
       <form onSubmit={doSignIn}>
         <input
@@ -76,7 +75,6 @@ function Signin() {
         {/* <Link classname="btn btn-pink" role="button" to="/" type="submit" >Submit Sign in</Link> */}
 
       </form>
-      <br />
       <br />
       <h3>Sign Out</h3>
       <button onClick={doSignOut}>Sign out</button>

@@ -7,7 +7,7 @@ function ReusableForm(props) {
       <form onSubmit={props.formSubmissionHandler}>
         <input
           type='text'
-          name='names'
+          name='name'
           placeholder='Host Names?' /><br />
         <input
           type='text'

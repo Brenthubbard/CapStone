@@ -15,7 +15,7 @@ function NewInputForm(props) {
     
     return firestore.collection('inputs').add(
       {
-        names: event.target.names.value,
+        name: event.target.name.value,
         
         location: event.target.location.value,
         
@@ -23,7 +23,10 @@ function NewInputForm(props) {
         
         guests: event.target.guests.value,
         
-        date: event.target.date.value , 
+        date: event.target.date.value,
+        
+        addInfo: event.target.addInfo.value,
+        
         timeOpen: firestore.FieldValue.serverTimestamp()
       }
     );

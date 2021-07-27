@@ -8,6 +8,8 @@ import NewInputForm from "./NewInputForm";
 
 
 function App() {
+  // const [fname, setFname] = useState("")
+
   return (
     <Router>
       <Header />
