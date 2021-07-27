@@ -29,8 +29,8 @@ function InputDetail(props) {
 
 InputDetail.propTypes = {
   input: PropTypes.object,
-  ingDelete: PropTypes.func,
-  ingEdit: PropTypes.func
+  onClickingDelete: PropTypes.func,
+  onClickingEdit: PropTypes.func
 };
 
 export default InputDetail;
