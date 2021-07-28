@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 import * as a from './../actions/Index';
 import { withFirestore, isLoaded } from 'react-redux-firebase';
 import '.././App.css'
-import '.././Homepage.css'
+// import '.././Homepage.css'
 
 
 

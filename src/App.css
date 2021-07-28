@@ -43,10 +43,28 @@ h3 {
 }
 input{
   color: blue;
+  align-items: center;
 }
 body{
-  background: pink
+  background: ivory
 }
 .inputs{
   align-items: center;
+  color: blue
+}
+.field1 {
+color:blue;
+text-align: center;
+}
+.button {
+  text-align: 'center';
+}
+div {
+  text-align: center;
+}
+.h1 {
+  text-align: center;
+}
+h1 {
+  text-align: center;
 }

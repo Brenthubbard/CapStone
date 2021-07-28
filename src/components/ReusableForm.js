@@ -8,6 +8,7 @@ function ReusableForm(props) {
   return (
     <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
+        <div class = 'field1'>
         <input
           style={{ width: '400px', border: 'solid olivedrab' }}
           type='text'
@@ -22,24 +23,22 @@ function ReusableForm(props) {
           placeholder='Desired location of the event?' />
         <br />
         <br />
-        <div class = 'field1'>
         <input
           style={{ width: '400px', border: 'solid olivedrab', color: 'blue' }}
           type='text'
           name='event'
             placeholder='What type of event are we doing?' />
-        </div>
         <br />
         <br />
         <input
-          style={{ width: '400px', border:'solid olivedrab' }}
-
+            style={{ width: '400px', border: 'solid olivedrab', class: 'input' }}
+          
           type='number'
           name='guests'
           placeholder='How many guests are we inviting?' />
         <br />
         <br />
-        <input
+        <input class='input'
           style={{ width: '400px', border: 'solid olivedrab' }}
           type='date'
           name='date'
@@ -50,17 +49,20 @@ function ReusableForm(props) {
           style={{ width: '400px', border: 'solid olivedrab',text:'blue' }}
           name='addInfo'
           placeholder='Additional Info.' />
+          </div>
         <br />
         <br />
-        
+        <div>
         <button style={{
           fontFamily: 'monospace',
           border: '2px solid green',
           backgroundColor: 'pink',
           color: 'chocolate',
           padding: '1px 4px',
-          margin: '3px'
-        }} type='submit'>{props.buttonText}</button>
+          margin: '3px',
+          alignItems: 'center'
+          }} type='submit'>{props.buttonText}</button>
+        </div>
       </form>
     </React.Fragment>
   );
