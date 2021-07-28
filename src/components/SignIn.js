@@ -4,7 +4,7 @@ import ReusableForm from "./ReusableForm";
 import Header from "./Header/Header";
 import { withRouter } from "react-router-dom";
 import { buildQueries } from "@testing-library/react";
-
+import '.././App.css'
 
 function Signin() {
   function doSignUp(event) {
@@ -23,6 +23,7 @@ function Signin() {
     const password = event.target.signinPassword.value;
     firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
       console.log("Successfully signed in!");
+
       // <Route exact path="/"/>
       // this.email.value = "";
       // this.password.value = "";
@@ -74,6 +75,7 @@ function Signin() {
           fontFamily: 'roboto',
           color: 'olivedrab'
         }}>Sign up</h3>
+
         <form onSubmit={doSignUp}>
           <input
             type='text'
@@ -93,9 +95,6 @@ function Signin() {
           }} >Sign up</button>
         </form>
         <br />
-        <br />
-
-        {/* <Link classname="btn btn-pink" role="button" to="/" type="submit" >Submit Sign in</Link> */}
 
       </form>
       <br />

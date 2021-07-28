@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Input from "./Input";
 import { useSelector } from 'react-redux'
-import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase'
+import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
+import '.././App.css'
 
 function InputList(props) {
 
@@ -18,7 +19,6 @@ function InputList(props) {
         <hr />
         {input.map((input) => {
           return <Input
-            
             whenInputClicked={props.onInputSelection}
             name={input.name}
             location={input.location}

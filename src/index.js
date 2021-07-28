@@ -12,6 +12,7 @@ import firebase from "./firebase";
 import 'firebase/auth';
 import 'bootstrap/dist/css/bootstrap.css';
 
+
 const store = createStore(rootReducer);
 
 const rrfProps = {

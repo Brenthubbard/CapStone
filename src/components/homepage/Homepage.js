@@ -1,19 +1,4 @@
-import React from 'react';
-import NewInputForm from './NewInputForm';
-import InputList from './InputList';
-import InputDetail from './InputDetail';
-import EditInputForm from './EditInputForm';
-import { connect } from 'react-redux';
-import PropTypes from "prop-types";
-import * as a from './../actions/Index';
-import { withFirestore, isLoaded } from 'react-redux-firebase';
-import '.././App.css'
-import '.././Homepage.css'
-
-
-
-
-class InputControl extends React.Component {
+class Homepage extends React.Component {
 
   constructor(props) {
     super(props);
@@ -44,24 +29,24 @@ class InputControl extends React.Component {
     dispatch(action2);
   }
 
-  handleChangingSelectedInput = (id) => {
-    this.props.firestore.get({ collection: 'inputs', doc: id }).then((input) => {
-      const firestoreInput = {
-        name: input.get("name"),
-        location: input.get("location"),
-        event: input.get("event"),
-        guests: input.get("guests"),
-        date: input.get("date"),
-        addInfo: input.get("addInfo"),
-        id: input.id
-      }
-      this.setState({ selectedInput: firestoreInput });
-    });
-  }
+  // handleChangingSelectedInput = (id) => {
+  //   this.props.firestore.get({ collection: 'inputs', doc: id }).then((input) => {
+  //     const firestoreInput = {
+  //       name: input.get("name"),
+  //       location: input.get("location"),
+  //       event: input.get("event"),
+  //       guests: input.get("guests"),
+  //       date: input.get("date"),
+  //       addInfo: input.get("addInfo"),
+  //       id: input.id
+  //     }
+  //     this.setState({ selectedInput: firestoreInput });
+  //   });
+  // }
 
-  handleEditClick = () => {
-    this.setState({ editing: true });
-  }
+  // handleEditClick = () => {
+  //   this.setState({ editing: true });
+  // }
 
   handleEditingInputInList = () => {
     // const { dispatch } = this.props;
@@ -73,10 +58,10 @@ class InputControl extends React.Component {
     });
   }
 
-  handleDeletingInput = (id) => {
-    this.props.firestore.delete({ collection: 'inputs', doc: id });
-    this.setState({ selectedInput: null });
-  }
+  // handleDeletingInput = (id) => {
+  //   this.props.firestore.delete({ collection: 'inputs', doc: id });
+  //   this.setState({ selectedInput: null });
+  // }
 
   render() {
     const auth = this.props.firebase.auth();
@@ -125,7 +110,7 @@ class InputControl extends React.Component {
             color: 'chocolate',
             padding: '1px 4px',
             margin: '3px'
-          }}  onClick={this.handleClick}>{buttonText}</button>
+          }} onClick={this.handleClick}>{buttonText}</button>
           {currentlyVisibleState}
           <button style={{
             fontFamily: 'monospace',
@@ -134,7 +119,7 @@ class InputControl extends React.Component {
             color: 'chocolate',
             padding: '1px 4px',
             margin: '3px'
-          }}  onClick={this.handleClick}>{buttonText}</button>
+          }} onClick={this.handleClick}>{buttonText}</button>
         </React.Fragment>
       );
     }

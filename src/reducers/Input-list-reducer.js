@@ -1,4 +1,5 @@
 import * as c from './../actions/ActionTypes';
+import "../App.css";
 
 export default (state = {}, action) => {
   const { /*names, location, issue,*/ id, formattedWaitTime, /*timeOpen */ } = action;

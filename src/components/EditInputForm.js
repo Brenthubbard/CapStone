@@ -2,7 +2,10 @@ import React from "react";
 import ReusableForm from "./ReusableForm";
 import PropTypes from "prop-types";
 import { useFirestore } from 'react-redux-firebase';
-
+import '.././App.css'
+  
+  
+  
 function EditInputForm(props) {
   const firestore = useFirestore();
   const { input } = props;
@@ -11,7 +14,7 @@ function EditInputForm(props) {
     event.preventDefault();
     props.onEditInput();
     const propertiesToUpdate = {
-    
+      
       name: event.target.name.value,
       location: event.target.location.value,
       event: event.target.event.value,
@@ -24,7 +27,7 @@ function EditInputForm(props) {
 
   return (
     <React.Fragment>
-      <ReusableForm
+      <ReusableForm class="inputs"
         formSubmissionHandler={handleEditInputFormSubmission}
         buttonText="Update Input" />
     </React.Fragment>
