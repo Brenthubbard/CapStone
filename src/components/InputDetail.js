@@ -15,7 +15,7 @@ function InputDetail(props) {
         border: '2px solid olivedrab',
         textAlign: 'justify',
         backgroundColor: "pink",
-        alignItems: 'center',
+        textAlign: 'center',
         width: 675,
         height: 50,
       }}>Input Details for this event</h1>
