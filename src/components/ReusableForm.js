@@ -26,6 +26,9 @@ function ReusableForm(props) {
           name='date'
           placeholder='Desired location of the event?' /><br />
         <textarea
+          onBlur={() => this.onBlur()}
+          onFocus={() => this.onFocus()}
+          style={{ height: 60, backgroundColor: this.state.backgroundColor, color: this.state.color }} />
           name='addInfo'
           placeholder='Additional Info.' /><br />
         
