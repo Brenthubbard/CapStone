@@ -18,6 +18,7 @@ function InputList(props) {
         <hr />
         {input.map((input) => {
           return <Input
+            
             whenInputClicked={props.onInputSelection}
             name={input.name}
             location={input.location}

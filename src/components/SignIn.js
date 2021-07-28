@@ -3,6 +3,7 @@ import firebase from "firebase/app";
 import ReusableForm from "./ReusableForm";
 import Header from "./Header/Header";
 import { withRouter } from "react-router-dom";
+import { buildQueries } from "@testing-library/react";
 
 
 function Signin() {
@@ -47,7 +48,11 @@ function Signin() {
   return (
     <React.Fragment>
       
-      <h1>Sign up</h1>
+      <h2 style={{
+        fontFamily: 'roboto',
+        color: 'olivedrab'
+
+      }}>Sign up</h2>
       <form onSubmit={doSignUp}>
         <input
           type='text'
@@ -57,11 +62,22 @@ function Signin() {
           type='password'
           name='password'
           placeholder='Password' /><br />
-        <button type='submit'>Sign up</button>
+        <button type='submit' style={{
+          fontFamily: 'monospace',
+          border: '2px solid green',
+          backgroundColor: 'pink',
+          color: 'chocolate',
+          padding: '1px 4px',
+          margin: '3px'
+        }} >Sign up</button>
       </form>
       <br />
       <br />
-      <h3>Sign In</h3>
+      <h3 style={{
+        fontFamily: 'roboto',
+        color: 'olivedrab'
+      }}
+>Sign In</h3>
       <form onSubmit={doSignIn}>
         <input
           type='text'
@@ -71,13 +87,30 @@ function Signin() {
           type='password'
           name='signinPassword'
           placeholder='Password' /><br />
-        <button type='submit'>Sign in</button>
+        <button type='submit' style={{
+          fontFamily: 'monospace',
+          border: '2px solid green',
+          backgroundColor: 'pink',
+          color: 'chocolate',
+          padding: '1px 4px',
+          margin: '3px'
+        }} >Sign in</button>
         {/* <Link classname="btn btn-pink" role="button" to="/" type="submit" >Submit Sign in</Link> */}
 
       </form>
       <br />
-      <h3>Sign Out</h3>
-      <button onClick={doSignOut}>Sign out</button>
+      <h3 style={{
+        fontFamily: 'roboto',
+        color: 'olivedrab'
+      }}>Sign Out</h3>
+      <button onClick={doSignOut} style={{
+        fontFamily: 'monospace',
+        border: '2px solid green',
+        backgroundColor: 'pink',
+        color: 'chocolate',
+        padding: '1px 4px',
+        margin: '3px'
+      }} >Sign out</button>
     </React.Fragment>
   )
 }

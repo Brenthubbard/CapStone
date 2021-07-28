@@ -9,7 +9,6 @@ function InputDetail(props) {
     
   return (
     <React.Fragment>
-      {/* <div style={this.style}> */}
         
       <h1>Input Detail</h1>
         <h3>{input.name}</h3>
@@ -18,10 +17,22 @@ function InputDetail(props) {
         <h3>{input.guests}</h3>
         <h3>{input.date}</h3>
         <h3>{input.addInfo}</h3>
-      {/* </div> */}
-      {/* <p><em>{input.issue}</em></p> */}
-      <button onClick={props.onClickingEdit}>Update Event</button>
-      <button onClick={() => onClickingDelete(input.id)}>Delete Event!</button>
+      <button style={{
+        fontFamily: 'monospace',
+        border: '2px solid green',
+        backgroundColor: 'pink',
+        color: 'chocolate',
+        padding: '1px 4px',
+        margin: '3px'
+      }}  onClick={props.onClickingEdit}>Update Event</button>
+      <button style={{
+        fontFamily: 'monospace',
+        border: '2px solid green',
+        backgroundColor: 'pink',
+        color: 'chocolate',
+        padding: '1px 4px',
+        margin: '3px'
+      }}  onClick={() => onClickingDelete(input.id)}>Delete Event!</button>
       <hr />
     </React.Fragment>
   );
