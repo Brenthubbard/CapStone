@@ -13,7 +13,9 @@ function InputDetail(props) {
         color: 'pink',
         border: '2px solid olivedrab'
       }}>Input Details for this event</h1>
-        <h3>{input.name}</h3>
+      <h3>style={{
+        fontFamily: 'monospace',
+        border: '2px solid green{input.name}</h3>
         <h3>{input.location}</h3>
         <h3>{input.event}</h3>
         <h3>{input.guests}</h3>
