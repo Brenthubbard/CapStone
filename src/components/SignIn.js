@@ -23,14 +23,14 @@ function Signin() {
     const password = event.target.signinPassword.value;
     firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
       console.log("Successfully signed in!");
-        // <Route exact path="/"/>
+      // <Route exact path="/"/>
       // this.email.value = "";
       // this.password.value = "";
     }).catch(function (error) {
       console.log(error.message);
     });
     // this.props.history.push("/");
-    
+
   }
   function doSignOut() {
     firebase.auth().signOut().then(function () {
@@ -47,37 +47,10 @@ function Signin() {
 
   return (
     <React.Fragment>
-      
-      <h2 style={{
-        fontFamily: 'roboto',
-        color: 'olivedrab'
-
-      }}>Sign up</h2>
-      <form onSubmit={doSignUp}>
-        <input
-          type='text'
-          name='email'
-          placeholder='Input you email here' /><br />
-        <input
-          type='password'
-          name='password'
-          placeholder='Password' /><br />
-        <button type='submit' style={{
-          fontFamily: 'monospace',
-          border: '2px solid green',
-          backgroundColor: 'pink',
-          color: 'chocolate',
-          padding: '1px 4px',
-          margin: '3px'
-        }} >Sign up</button>
-      </form>
-      <br />
-      <br />
       <h3 style={{
         fontFamily: 'roboto',
         color: 'olivedrab'
-      }}
->Sign In</h3>
+      }}>Sign In</h3>
       <form onSubmit={doSignIn}>
         <input
           type='text'
@@ -95,6 +68,33 @@ function Signin() {
           padding: '1px 4px',
           margin: '3px'
         }} >Sign in</button>
+        <br />
+        <br />
+        <h3 style={{
+          fontFamily: 'roboto',
+          color: 'olivedrab'
+        }}>Sign up</h3>
+        <form onSubmit={doSignUp}>
+          <input
+            type='text'
+            name='email'
+            placeholder='Input you email here' /><br />
+          <input
+            type='password'
+            name='password'
+            placeholder='Password' /><br />
+          <button type='submit' style={{
+            fontFamily: 'monospace',
+            border: '2px solid green',
+            backgroundColor: 'pink',
+            color: 'chocolate',
+            padding: '1px 4px',
+            margin: '3px'
+          }} >Sign up</button>
+        </form>
+        <br />
+        <br />
+
         {/* <Link classname="btn btn-pink" role="button" to="/" type="submit" >Submit Sign in</Link> */}
 
       </form>
@@ -114,4 +114,4 @@ function Signin() {
     </React.Fragment>
   )
 }
-export default Signin 
+export default Signin

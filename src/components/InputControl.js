@@ -114,7 +114,14 @@ class InputControl extends React.Component {
       return (
         <React.Fragment>
           {currentlyVisibleState}
-          <button onClick={this.handleClick}>{buttonText}</button>
+          <button style={{
+            fontFamily: 'monospace',
+            border: '2px solid green',
+            backgroundColor: 'pink',
+            color: 'chocolate',
+            padding: '1px 4px',
+            margin: '3px'
+          }}  onClick={this.handleClick}>{buttonText}</button>
         </React.Fragment>
       );
     }

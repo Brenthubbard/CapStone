@@ -8,7 +8,6 @@ import NewInputForm from "./NewInputForm";
 
 
 function App() {
-  // const [fname, setFname] = useState("")
 
   return (
     <Router>
@@ -20,9 +19,7 @@ function App() {
         <Route path="/">
           <InputControl />
         </Route>
-          {/* <div className="App">
-            <Header />
-          </div> */}
+          
       </Switch>
     </Router>
     

@@ -10,13 +10,23 @@ function InputDetail(props) {
         
       <h1 style={{
         fontFamily: 'monospace',
-        color: 'pink',
-        border: '2px solid olivedrab'
+        color: 'olivedrab',
+        border: '2px solid olivedrab',
+        flexDirection: 'column',
+        backgroundColor: "pink",
+        width: 675,
+        height: 50,
       }}>Input Details for this event</h1>
-      <h3>style={{
+      <h3 style={{
         fontFamily: 'monospace',
-        border: '2px solid green{input.name}</h3>
-        <h3>{input.location}</h3>
+        fontSize: '40px',
+        font: 'bold'
+      }} >{input.name}</h3>
+      <h3 style={{
+        fontFamily: 'monospace',
+        border: 'seagreen',
+        font: 'bold'
+      }} >{input.location}</h3>
         <h3>{input.event}</h3>
         <h3>{input.guests}</h3>
         <h3>{input.date}</h3>

@@ -31,19 +31,18 @@ function NewInputForm(props) {
       }
     );
   }
-  // props.onNewTicketCreation({
-  //   names: event.target.names.value,
-  //   location: event.target.location.value,
-  //   issue: event.target.issue.value,
-  //   id: v4(),
-  //   timeOpen: new Moment(),
-  //   formattedWaitTime: new Moment().fromNow(true)
-  // });
-  // }
+  
 
   return (
     <React.Fragment>
-      <ReusableForm
+      <ReusableForm style={{
+        fontFamily: 'monospace',
+        border: '2px solid green',
+        backgroundColor: 'pink',
+        color: 'chocolate',
+        padding: '1px 4px',
+        margin: '3px'
+      }}
         formSubmissionHandler={addInputToFirestore}
         buttonText="Submit your party information!" />
     </React.Fragment>
