@@ -29,7 +29,14 @@ function ReusableForm(props) {
           name='addInfo'
           placeholder='Additional Info.' /><br />
         
-        <button type='submit'>{props.buttonText}</button>
+        <button style={{
+          fontFamily: 'monospace',
+          border: '2px solid green',
+          backgroundColor: 'pink',
+          color: 'chocolate',
+          padding: '1px 4px',
+          margin: '3px'
+        }} type='submit'>{props.buttonText}</button>
       </form>
     </React.Fragment>
   );
