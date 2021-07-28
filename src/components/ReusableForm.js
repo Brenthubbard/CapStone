@@ -6,31 +6,49 @@ function ReusableForm(props) {
     <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
         <input
+          style={{ width: '400px', border: 'solid olivedrab' }}
           type='text'
           name='name'
-          placeholder='Host Names?' /><br />
+          placeholder='Host Names?' />
+        <br />
+        <br />
         <input
+          style={{ width: '400px', border: 'solid olivedrab' }}
           type='text'
           name='location'
-          placeholder='Desired location of the event?' /><br />
+          placeholder='Desired location of the event?' />
+        <br />
+        <br />
+        <div class = 'field1'>
         <input
+          style={{ width: '400px', border: 'solid olivedrab', color: 'blue' }}
           type='text'
           name='event'
-          placeholder='What type of event are we doing?' /><br />
+            placeholder='What type of event are we doing?' />
+        </div>
+        <br />
+        <br />
         <input
+          style={{ width: '400px', border:'solid olivedrab' }}
+
           type='number'
           name='guests'
-          placeholder='How many guests are we inviting?' /><br />
+          placeholder='How many guests are we inviting?' />
+        <br />
+        <br />
         <input
+          style={{ width: '400px', border: 'solid olivedrab' }}
           type='date'
           name='date'
-          placeholder='Desired location of the event?' /><br />
+          placeholder='Desired location of the event?' />
+        <br />
+        <br />
         <textarea
-          onBlur={() => this.onBlur()}
-          onFocus={() => this.onFocus()}
-          style={{ height: 60, backgroundColor: this.state.backgroundColor, color: this.state.color }} />
+          style={{ width: '400px', border: 'solid olivedrab',text:'blue' }}
           name='addInfo'
-          placeholder='Additional Info.' /><br />
+          placeholder='Additional Info.' />
+        <br />
+        <br />
         
         <button style={{
           fontFamily: 'monospace',

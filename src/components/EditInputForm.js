@@ -11,6 +11,7 @@ function EditInputForm(props) {
     event.preventDefault();
     props.onEditInput();
     const propertiesToUpdate = {
+    
       name: event.target.name.value,
       location: event.target.location.value,
       event: event.target.event.value,
