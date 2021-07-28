@@ -3,14 +3,16 @@ import PropTypes from "prop-types";
 
 function InputDetail(props) {
   const { input, onClickingDelete } = props;
-  // super()
-  // this.style = {
       
     
   return (
     <React.Fragment>
         
-      <h1>Input Detail</h1>
+      <h1 style={{
+        fontFamily: 'monospace',
+        color: 'pink',
+        border: '2px solid olivedrab'
+      }}>Input Details for this event</h1>
         <h3>{input.name}</h3>
         <h3>{input.location}</h3>
         <h3>{input.event}</h3>
