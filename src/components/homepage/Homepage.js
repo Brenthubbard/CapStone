@@ -127,7 +127,7 @@ class Homepage extends React.Component {
 }
 
 
-InputControl.propTypes = {
+Homepage.propTypes = {
   masterInputList: PropTypes.object
 };
 
@@ -137,6 +137,6 @@ const mapStateToProps = state => {
   }
 }
 
-InputControl = connect(mapStateToProps)(InputControl);
+Homepage = connect(mapStateToProps)(Homepage);
 
-export default withFirestore(InputControl);
+export default withFirestore(Homepage);
