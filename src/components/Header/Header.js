@@ -29,7 +29,10 @@ import styled from 'styled-components';
 
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/homepage">Home</Link>
+          </li>
+          <li>
+            <Link to="/">Event List</Link>
           </li>
           <li>
             <Link to="/signin">Sign In</Link>
