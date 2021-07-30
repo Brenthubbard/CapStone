@@ -36,9 +36,11 @@ function ReusableForm(props) {
           type='number'
           name='guests'
           placeholder='How many guests are we inviting?' />
+          <br />
+        </div>
         <br />
-        <br />
-        <input class='input'
+        <div>
+          <input class='input'
           style={{ width: '400px', border: 'solid olivedrab' }}
           type='date'
           name='date'

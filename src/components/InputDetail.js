@@ -9,13 +9,12 @@ function InputDetail(props) {
   return (
     <React.Fragment>
         
-      <h1 class='h1' style={{
+      <h1 id='h1' style={{
         fontFamily: 'monospace',
         color: 'olivedrab',
         border: '2px solid olivedrab',
         textAlign: 'justify',
         backgroundColor: "pink",
-        textAlign: 'center',
         width: 675,
         height: 50,
       }}>Input Details for this event</h1>
